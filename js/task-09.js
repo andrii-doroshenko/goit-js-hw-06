@@ -9,7 +9,6 @@ btnEl.addEventListener("click", onBtnColorChange);
 function onBtnColorChange(event) {
   const outputEl = document.querySelector(".color");
   const bodyEl = document.querySelector("body");
-
-  outputEl.textContent = getRandomHexColor();
-  bodyEl.style.backgroundColor = getRandomHexColor();
+  let color = (bodyEl.style.backgroundColor = getRandomHexColor());
+  outputEl.textContent = color;
 }
